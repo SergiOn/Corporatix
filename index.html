@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Мой первый сверстанный макет</title>
+
+		<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		html {
+			height: 100%;
+			background-color: #dadfeb;
+			background-image: url(images/toplogobg.png);
+			background-repeat: repeat-x;
+			background-position: top;
+		}
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			height: 100%;
+			background: url(images/header_bg_c.png) no-repeat center,
+						url(images/header_bg.png) repeat-x 0px 91px;
+		}
+		h1 {
+			font-size: 36px;
+			font-weight: normal;
+			color: #132445;
+		}
+		h2 {
+			font-size: 20px;
+			font-weight: bold;
+			color: #132445;
+		}
+		h3 {
+			font-size: 15px;
+			font-weight: bold;
+			color: #132445;
+		}
+		p {
+			font-size: 13px;
+			font-weight: normal;
+			color: #132445;
+		}
+		#wrap {
+			width: 960px;
+			min-height: 100%;
+			margin: 0 auto;
+		}
+		/*-- begin top --*/
+		#top {
+			height: 91px;
+		}
+		#top ul {
+			float: right;
+			margin-top: 26px;
+			list-style: none;
+		}
+		#top ul li {
+			float: left;
+			margin-right: 8px;
+		}
+		#top ul li a {
+			font-size: 13px;
+			font-weight: bold;
+			float: left;
+			padding: 6px 16px;
+			text-decoration: none;
+			color: #2f57a1;
+			border-radius: 12px;
+		}
+		#top ul li a:hover/*, #top ul li .active*/{
+			color: #000;
+			background-color: #fafafa;
+			background-image: url(images/topkey.png);
+			background-position: top;
+			background-repeat: repeat-x;
+		}
+		/*-- end top --*/
+		/*-- begin header --*/
+		#header {
+			position: relative;
+			height: 500px;
+			background-repeat: no-repeat;
+		}
+		#header .imgleft {
+			position: absolute;
+			top: 54px;
+			left: 13px;
+			z-index:1;
+		}
+		#header .imgright {
+			position: absolute;
+			top: 54px;
+			right: 13px;
+			z-index:2;
+		}
+		#header .imgcenter {
+			position: absolute;
+			top: 20px;
+			left: 206px;
+			z-index:3;
+		}
+		#slider {
+			position: relative;
+			top: 462px;
+			width: 115px;
+			height: 18px;
+			margin: 0 auto;
+		}
+		#slider .slide {
+			float:left;
+			display: block;
+			width: 16px;
+			height: 18px;
+			margin-right:17px;
+			background-image: url(images/header_slideshow.png);
+			background-position: right top;
+			background-repeat: no-repeat;
+		}
+		#slider .active {
+			background-position:left top;
+		}
+		/*-- end header --*/
+		/*-- begin content --*/
+		#content {
+			height: 824px;
+			padding-bottom: 100px;
+			color: #FFFFFF;
+		}
+		#content .band {
+			height: 160px;
+			overflow: hidden;
+			background-image: url(images/content_nearkey_bg.png);
+			background-repeat: repeat-x;
+			background-position: top;
+		}
+
+		#content h1 {
+			display: inline-block;
+			width:590px;
+			margin-top:17px;
+			clear: both;
+		}
+		#content .key {
+			float:right;
+			display: block;
+			width: 330px;
+			height: 84px;
+			margin-top: 12px;
+			border: 5px solid #fff;
+			border-radius: 12px;
+			background-image: url(images/content_key_bg.png);
+			background-repeat: repeat-x;
+			background-position: left top;
+		}
+		#content .key img {
+			margin: 27px 0 0 22px;
+		}
+		#content .key h2 {
+			font-size:22px;
+			float: right;
+			margin: 14px 16px 0 0;
+			color: #fff;
+			text-transform: uppercase;
+		}
+		#content .key span {
+			font-size: 30px;
+		}
+			/*-- begin content box --*/
+		.boxis {
+			overflow: hidden;
+		}
+		.box {
+			float: left;
+			width: 217px;
+			height: 315px;
+			margin-right: 28px;
+			border: 1px solid #bfc4d1;
+			text-align: center;
+			background-color: #fff;
+			border-radius: 4px;
+		}
+		.box img {
+			margin-top: 18px;
+			border: 1px solid #bfc4d1;
+		}
+		.boxtext {
+			width: 175px;
+			margin: 0 auto;
+			margin-top: 20px;
+			text-align: left;
+		}
+		.boxtext p {
+			margin-top: 20px;
+			margin-bottom: 16px;
+
+		}
+		.boxtext a {
+			padding: 5px 20px;
+			color: #2945C0;
+			font-size: 13px;
+			text-decoration: none;
+			border: 1px solid #bfc4d1;
+			border-radius: 12px;
+			background-color: #fff;
+			background-image: url(images/content_boxtextbg.png);
+			background-position: top;
+			background-repeat: repeat-x;
+		}
+			/*-- end content box --*/
+			/*-- begin content title --*/
+		.aboutcomp {
+			margin-top: 27px;
+			overflow: hidden;
+		}
+		.thetitle {
+			float: left;
+			width: 452px;
+			margin-right: 42px;
+			margin-top: 9px;
+		}
+		.title {
+			display:inline-block;
+			width: 200px;
+			margin-right: 44px;
+			margin-bottom: 30px;
+		}
+		.title img {
+			float: left;
+			margin-right: 7px;
+		}
+		.title h3 {
+			margin-bottom: 9px;
+			overflow: hidden;
+			line-height: 44px;
+		}
+		.about {
+			float: left;
+			width: 466px;
+			margin-top: 12px;
+		}
+		.about p {
+			margin: 28px 0px 15px;
+			line-height: 25px;
+		}
+		.about a {
+			font-size: 13px;
+			color: #2945C0;
+		}
+			/*-- end content title --*/
+		/*-- end content --*/
+		/*-- begin footer --*/
+		#footer {
+			width: 100%;
+			background-color: #565f81;
+		}
+		#footercontent {
+			width: 960px;
+			height: 120px;
+			margin: 0 auto;
+			margin-top: -100px;
+			overflow: hidden;
+		}
+		#footercontent ul {
+			float: left;
+			margin-top: 25px;
+			list-style: none;
+		}
+		#footercontent ul li {
+			float: left;
+		}
+		#footercontent ul li a {
+			font-size: 13px;
+			color: #DADFEB;
+			text-decoration: none;
+		}
+		#footercontent ul li img {
+			position: relative;
+			top:2px;
+			padding:0px 12px 0px 11px;
+		}
+		#footercontent .allsocial {
+			float: right;
+		}
+		#footercontent .allsocial p {
+			float: left;
+			margin-top: 10px;
+			margin-right: 20px;
+			color: #DADFEB;
+		}
+		#footercontent .allsocial .social {
+			font-size: 13px;
+			float: left;
+			display: block;
+			width: 34px;
+			height: 34px;
+			margin-right: 17px;
+			color: #DADFEB;
+			text-indent: -9000px;
+			border-radius: 5px;
+			background-color: #373d56;
+			background-image: url(images/footer_key.png);
+			background-repeat: no-repeat;
+		}
+		#footercontent .allsocial .fb {
+			background-position: -51px 0px;
+		}
+		#footercontent .allsocial .in {
+			background-position: -102px 0px;
+		}
+		#footercontent .allsocial .ml {
+			background-position: -153px 0px;
+		}
+		#footercontent .autor {
+			float: left;
+		}
+		#footercontent .autor p {
+			font-size: 12px;
+			color: #9FA8BD;
+		}
+		#footercontent .autor a {
+			font-size: 12px;
+			color: #9FA8BD;
+			text-decoration: none;
+		}
+		#footercontent .autor .slashsm {
+			width: 2px;
+			height: 11px;
+			padding:2px 4px 0px 4px;
+			background-image: url(images/footer_slesh_sm.png);
+			background-repeat: no-repeat;
+			background-position: bottom;
+		}
+		.autor p, .autor .slashsm, .autor a {
+			float: left;
+		}
+		#footercontent .overflow {
+			overflow: hidden;
+		}
+		/*-- end footer --*/
+
+		#top .nomarginr,
+		#slider .nomarginr,
+		#footercontent .allsocial .nomarginr,
+		.nomarginr{
+			margin-right: 0px;
+		}
+		.nomarginb{
+			margin-bottom: 0px;
+		}
+		</style>
+
+</head>
+
+<body>
+<div id="wrap">
+	<div id="top">
+    	<a href="index.html"><img src="images/toplogo.png" alt=""></a>
+	    <ul>
+	    	<li><a href="#" class="active">Home</a></li>
+	    	<li><a href="#">Services</a></li>
+	    	<li><a href="#">Portfolio</a></li>
+	    	<li><a href="#">Testimonial</a></li>
+	    	<li><a href="#">Blog</a></li>
+	    	<li class="nomarginr"><a href="#">Contact Us</a></li>
+	    </ul>
+    </div><!--end of top-->
+    
+	<div id="header">
+        <img class="imgleft" src="images/header_mon_l.png" alt="">
+        <img class="imgright" src="images/header_mon_r.png" alt="">
+        <img class="imgcenter" src="images/header_mon_c.png" alt="">
+        <div id="slider">
+        	<a href="#" class="active slide"></a>
+        	<a href="#" class="slide"></a>
+        	<a href="#" class="slide"></a>
+        	<a href="#" class="slide nomarginr"></a>
+        </div>
+    </div><!--end of header-->
+    
+    <div id="content">
+    	<div class="band">
+    		<h1>We can make your online business easy &amp; usable for all walks of people</h1>
+    		<a href="#" class="key">
+    			<img src="images/content_key_l.png" alt="">
+    			<h2>Let’s start<br><span>your Website</span></h2>
+    		</a>
+    	</div>
+    	<div class="boxis">
+    		<div class="box">
+    			<img src="images/content_box1.png" alt="">
+    			<div class="boxtext">
+    				<h2>Business Heading</h2>
+    				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt mi id libero egestas ut interdum nibh cursus.</p>
+    				<a href="#">Read More &gt;</a>
+    			</div>
+    		</div>
+    		<div class="box">
+    			<img src="images/content_box2.png" alt="">
+    			<div class="boxtext">
+    				<h2>Business Heading</h2>
+    				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt mi id libero egestas ut interdum nibh cursus.</p>
+    				<a href="#">Read More &gt;</a>
+    			</div>
+    		</div>
+    		<div class="box">
+    			<img src="images/content_box3.png" alt="">
+    			<div class="boxtext">
+    				<h2>Business Heading</h2>
+    				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt mi id libero egestas ut interdum nibh cursus.</p>
+    				<a href="#">Read More &gt;</a>
+    			</div>
+    		</div>
+    		<div class="box nomarginr">
+    			<img src="images/content_box4.png" alt="">
+    			<div class="boxtext">
+    				<h2>Business Heading</h2>
+    				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt mi id libero egestas ut interdum nibh cursus.</p>
+    				<a href="#">Read More &gt;</a>
+    			</div>
+    		</div>
+    	</div>
+
+    	<div class="aboutcomp">
+    		<div class="thetitle">
+    			<div class="title">
+    				<h3>
+    					<img src="images/content_pic1.png" alt="">
+    					Title Heading</h3>
+    				<p>Lorem ipsum dolor sit amet, cons ectetur adipiscing elit. Aliqu am tincidunt mi id libero egestas ut interdum nibh cursus.</p>
+    			</div>
+    			<div class="title nomarginr">
+    				<h3>
+    					<img src="images/content_pic2.png" alt="">
+    					Title Heading
+    				</h3>
+    				<p>Lorem ipsum dolor sit amet, cons ectetur adipiscing elit. Aliqu am tincidunt mi id libero egestas ut interdum nibh cursus.</p>
+    			</div>
+    			<div class="title nomarginb">
+    				<h3>
+    					<img src="images/content_pic3.png" alt="">
+    					Title Heading
+    				</h3>
+    				<p>Lorem ipsum dolor sit amet, cons ectetur adipiscing elit. Aliqu am tincidunt mi id libero egestas ut interdum nibh cursus.</p>
+    			</div>
+    			<div class="title nomarginr nomarginb">
+    				<h3>
+    					<img src="images/content_pic4.png" alt="">
+    					Title Heading
+    				</h3>
+    				<p>Lorem ipsum dolor sit amet, cons ectetur adipiscing elit. Aliqu am tincidunt mi id libero egestas ut interdum nibh cursus.</p>
+    			</div>
+    		</div>
+    		<div class="about">
+    			<h3>About the Company</h3>
+    			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt mi id libero egestas ut interdum nibh cursus. Nulla erat orci, adipiscing vel molestie ac, vehicula in dui. Proin vel lorem in tellus placerat eleifend. Duis iaculis lorem a ipsum euismod vel ullamcorper arcu placerat. Aenean elementum tortor vel nisi bibendum bibendum. Aliquam fringilla feugiat ante in vestibulum. Sed non justo justo. Aenean et quam dolor. Vivamus aliquet gravida nunc, sed elementum elit blandit vel. Aliquam neque quam, dignissim ac mattis at, hendrerit nec elit. Cras commodo gravida placerat.</p>
+    			<a href="">Read More &gt;</a>
+    		</div>
+    	</div>
+    </div><!--end of content-->
+</div><!--end of wrap-->
+
+<div id="footer">
+    <div id="footercontent">
+    	<div class="overflow">
+	    	<ul>
+		    	<li><a href="#">Home</a></li>
+		    	<li><img src="images/footer_slesh.png" alt=""></li>
+		    	<li><a href="#">Services</a></li>
+		    	<li><img src="images/footer_slesh.png" alt=""></li>
+		    	<li><a href="#">Portfolio</a></li>
+		    	<li><img src="images/footer_slesh.png" alt=""></li>
+		    	<li><a href="#">Testimonial</a></li>
+		    	<li><img src="images/footer_slesh.png" alt=""></li>
+		    	<li><a href="#">Blog</a></li>
+		    	<li><img src="images/footer_slesh.png" alt=""></li>
+		    	<li class="nomarginr"><a href="#">Contact Us</a></li>
+		    </ul>
+	    </div>
+	    <div class="overflow">
+			<div class="allsocial">
+				<p>Connect with us:</p>
+				<a href="#" class="social tw">Twitter</a>
+				<a href="#" class="social fb">Facebook</a>
+				<a href="#" class="social in">Instagram</a>
+				<a href="#" class="social ml nomarginr">Email</a>
+			</div>
+		</div>
+		<div class="overflow">
+			<div class="autor">
+				<p>&copy; 2010 WebCorp LLC</p>
+				<div class="slashsm"></div>
+				<a href="">Terms of service</a>
+				<div class="slashsm"></div>
+				<a href="">Privacy policy</a>
+			</div>
+		</div>
+    </div><!--end of footercontent-->
+</div><!--end of footer-->
+
+</body>
+</html>
